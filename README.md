@@ -12,7 +12,7 @@ This is a full-stack application where users can sign up and log in to interact 
 
 🔗 View the Project
 
-• You can view the live project by clicking here: [Live Link]
+• You can view the live project by clicking here: [https://mern-gemini-ai-ui.vercel.app/]
 
 If you want to run it on your machine, follow these steps:
 
