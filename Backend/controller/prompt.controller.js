@@ -41,3 +41,5 @@ export const sendPrompt = async (req, res) => {
     res.status(400).json({ Error: "Something went wrong with Ai Response " });
   }
 };
+
+
