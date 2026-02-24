@@ -1,7 +1,6 @@
 import User from "../model/user.model.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import JWT_SECRET_PASSWORD from "../confiq.js";
 
 export const signup = async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -51,7 +50,7 @@ export const login = async (req, res) => {
 
     // JWT Code
 
-    const Token = jwt.sign({ id: user._id }, JWT_SECRET_PASSWORD, {
+    const Token = jwt.sign({ id: user._id }, process.env.JWT_PASSWORD, {
       expiresIn: "1d",
     });
 

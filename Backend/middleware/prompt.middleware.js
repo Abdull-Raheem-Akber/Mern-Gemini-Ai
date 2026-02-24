@@ -1,5 +1,4 @@
 import jwt from "jsonwebtoken";
-import JWT_SECRET_PASSWORD from "../confiq.js";
 const userMiddleware = (req, res, next) => {
   const authHeader = req.headers.authorization;
 
@@ -10,7 +9,7 @@ const userMiddleware = (req, res, next) => {
   const token = authHeader.split(" ")[1];
 
   try {
-    const decoded = jwt.verify(token, JWT_SECRET_PASSWORD);
+    const decoded = jwt.verify(token, process.env.JWT_PASSWORD);
     req.user = req.user || {};
     req.userId = decoded.id;
     next();
