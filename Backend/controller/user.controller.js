@@ -58,8 +58,8 @@ export const login = async (req, res) => {
     const cookieOption = {
       expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
       httpOnly: true,
-      secure: false,
-      sameSite: "Strict",
+      secure: true,
+      sameSite: "None",
     };
 
     res.cookie("jwt", Token, cookieOption);

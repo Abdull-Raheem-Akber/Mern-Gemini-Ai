@@ -8,7 +8,7 @@ This is a full-stack application where users can sign up and log in to interact 
 • Backend: Node.js, Express.js.
 • Database: MongoDB Atlas.
 • AI: Google Gemini API.
-• Security: JWT, Cookie-parser, Helmet.js.
+• Security: JWT, Cookie-parser,.
 
 🔗 View the Project
 
